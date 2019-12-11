@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <div class="navbar navbar-inverse navbar-fixed-top text-darken-4">
+        <nav>
+            <div class="nav-wrapper purple lighten-4">
+                <a href="#" class="brand-logo hoverable">@Html.ActionLink("Gestion de Visitas", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down hoverable">
+                    <li>@Html.ActionLink("Contactos", "Index", "Contactoes")</li>
+                    <li>@Html.ActionLink("Visitas", "Index", "Visitas")</li>
+                    
+                </ul>
+            </div>
+        </nav>
+       
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        
+        <footer class="page-footer purple lighten-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text text-darken-4">Gestor de Visitas</h5>
+                        <p class="black-text text-darken-4">Todos son bienvenidos</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="footer-copyright purple darken-4">
+                <div class="container">
+                    © 2019 Copyright Text
+                    
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
