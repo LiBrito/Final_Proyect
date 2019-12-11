@@ -1,0 +1,139 @@
+﻿@model ClubReg.Models.Socios
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Detalles del Asociado</h2>
+
+<div>
+    <h4>Socios</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombres)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombres)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Apellidos)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Apellidos)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Identificacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Identificacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Telefono)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Telefono)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Celular)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Celular)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sexo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sexo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Edad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Edad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Membresia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Membresia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LTrabajo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LTrabajo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tradress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tradress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TelOffice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TelOffice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EstMen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EstMen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EndDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EndDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Imagen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Imagen)
+        </dd>
+
+
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.SocioID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
